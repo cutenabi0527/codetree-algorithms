@@ -6,8 +6,8 @@ public class Main {
         int sum =a+b+c;
         a=b=c=sum;
         
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
+        System.out.print(a+" ");
+        System.out.print(b+" ");
+        System.out.print(c);
     }
 }
