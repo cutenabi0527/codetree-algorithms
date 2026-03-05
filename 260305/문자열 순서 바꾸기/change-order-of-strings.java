@@ -6,7 +6,8 @@ public class Main {
         
         String a = sc.next();
         String b = sc.next();
-        System.out.println(b+" "+a);
+        System.out.println(b);
+        System.out.println(a);
 
     }
 }
