@@ -7,7 +7,7 @@ public class Main {
         String a = sc.next();
         String[] arr = a.split(":");
 
-        System.out.println(arr[0]+":"+arr[1]);
+        System.out.println(Integer.parseInt(arr[0])+1+":"+arr[1]);
 
     }
 }
