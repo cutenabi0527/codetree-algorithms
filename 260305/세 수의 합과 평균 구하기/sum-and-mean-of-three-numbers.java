@@ -7,7 +7,7 @@ public class Main {
         int a=sc.nextInt();
         int b=sc.nextInt();
         int c =sc.nextInt();
-        double d = (double)(a+b+c)/3;
+        double d = (int)(a+b+c)/3;
 
         System.out.printf("%d\n%.0f",a+b+c,d);
 
