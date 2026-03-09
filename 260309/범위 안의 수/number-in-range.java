@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         
-        System.out.println(a>=10 && a<=20 ? 1 : 0);
+        System.out.println(a>=10 && a<=20 ? "yes" : "no");
 
     }
 }
