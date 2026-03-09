@@ -5,8 +5,8 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		int a =sc.nextInt();
 		int b =sc.nextInt();
-		int i=b;
-		while (i>=a) {
+		int i=a;
+		while (i>=b) {
 			if (i%2==0) {
 				System.out.print(i+" ");
 			}
