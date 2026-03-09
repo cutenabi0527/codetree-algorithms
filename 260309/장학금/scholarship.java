@@ -9,6 +9,7 @@ public class Main {
         if (a>=90) {
         	if (b>=95) System.out.println(100000);
             else if (b>=90) System.out.println(50000);
+            else System.out.println(0);
         }else System.out.println(0);
        
         
