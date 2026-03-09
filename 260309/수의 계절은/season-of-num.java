@@ -5,14 +5,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
        
-        String result = switch (a) {
-        case 3,4,5 -> "Spring";
-        case 6,7,8 -> "Summer";
-        case 9,10,11 -> "Fall";
-        case 1,2,12 -> "Winter";
-        default -> "";
-        };
-        System.out.println(result);
+        if (a==3 || a==4 || a==5) System.out.println("Spring");
+        else if (a==6 || a==7 || a==8) System.out.println("Summer");
+        else if (a==9 || a==10 || a==11) System.out.println("Fall");
+        else if (a==12 || a==1 || a==2) System.out.println("Winter");
+        
+
 
     }
 }
