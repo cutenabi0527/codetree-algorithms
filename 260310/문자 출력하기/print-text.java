@@ -3,9 +3,10 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int a =sc.nextInt();
-		for (int i=0; i<a; i++) {
-			System.out.print("G");
+		char a =sc.next().charAt(0);
+//		int b =sc.nextInt();
+		for (int i=0; i<8; i++) {
+			System.out.print(a);
 		}
 		
 	}
