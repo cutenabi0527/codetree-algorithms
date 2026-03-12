@@ -7,7 +7,10 @@ public class Main {
 		while (true) {
 			int a = sc.nextInt();
 			int check=0;
-			if (a%2!=0)continue;
+			if (check<3 && a%2!=0) {
+				check++;
+				continue;
+			}
 			else {
 				if (check<3) {
 					System.out.println(a/2);
