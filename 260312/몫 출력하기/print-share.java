@@ -7,7 +7,7 @@ public class Main {
 		while (true) {
 			int a = sc.nextInt();
 			int check=0;
-			if (check<3 && a%2!=0) {
+			if (a%2!=0) {
 				check++;
 				continue;
 			}
@@ -18,6 +18,7 @@ public class Main {
 				}else break;
 			
 			}
+			check++;
 		}
 		
 	}
