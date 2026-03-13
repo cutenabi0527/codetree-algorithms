@@ -6,11 +6,11 @@ public class Main {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
-		boolean check = false;
+		boolean check = true;
 		
 		for (int i=a; i<=b;i++) {
 			if (c%i==0) {
-				check=true;
+				check=false;
 				break;
 			}
 		}
