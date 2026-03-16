@@ -5,14 +5,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         
-        int mid = (n+1)/2;
-        for (int i=0; i<2*n-1;i++) {
-        	int dist = Math.abs(i-mid);
-        	for (int j=0; j<Math.abs(n-dist);j++) {
-        		System.out.print("*");
-        	}System.out.println();
+        for (int i = 1; i <= 2 * n - 1; i++) {
+            int stars;
+            
+            if (i <= n) {
+                stars = i;
+            } else {
+                stars = (2 * n) - i;
+            }
+            for (int j = 0; j < stars; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
-
-
     }
 }
