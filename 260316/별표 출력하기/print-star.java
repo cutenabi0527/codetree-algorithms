@@ -14,7 +14,7 @@ public class Main {
                 stars = (2 * n) - i;
             }
             for (int j = 0; j < stars; j++) {
-                System.out.print("*");
+                System.out.print("* ");
             }
             System.out.println();
         }
