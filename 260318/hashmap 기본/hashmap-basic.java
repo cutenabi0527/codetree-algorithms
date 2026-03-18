@@ -1,35 +1,37 @@
-import java.util.Scanner;
-import java.util.HashMap;
+import java.io.*;
+import java.util.*;
 
-public class Main {    
-    // 변수 선언
-    public static int n;
-    public static HashMap<Integer, Integer> m = new HashMap<>();
+public class Main {
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        // 입력:
-        n = sc.nextInt();
-        
-        for(int i = 0; i < n; i++) {
-            String command = sc.next();
+        int N = Integer.parseInt(br.readLine());
+        HashMap<Integer, Integer> map = new HashMap<>();
 
-            if(command.equals("add")) {
-                int k = sc.nextInt();
-                int v = sc.nextInt();
-                m.put(k, v);
-            }
-            else if(command.equals("remove")) {
-                int k = sc.nextInt();
-                m.remove(k);
-            }
-            else {
-                int k = sc.nextInt();
-                if(!m.containsKey(k))
-                    System.out.println("None");
-                else
-                    System.out.println(m.get(k));
+        for (int i = 0; i < N; i++) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            String cmd = st.nextToken();
+
+            if (cmd.equals("add")) {
+                int k = Integer.parseInt(st.nextToken());
+                int v = Integer.parseInt(st.nextToken());
+                map.put(k, v);   // 있으면 덮어쓰기, 없으면 추가
+            } 
+            else if (cmd.equals("remove")) {
+                int k = Integer.parseInt(st.nextToken());
+                map.remove(k);
+            } 
+            else if (cmd.equals("find")) {
+                int k = Integer.parseInt(st.nextToken());
+                if (map.containsKey(k)) {
+                    sb.append(map.get(k)).append('\n');
+                } else {
+                    sb.append("None").append('\n');
+                }
             }
         }
+
+        System.out.print(sb);
     }
 }
