@@ -14,7 +14,7 @@ public class Main {
 		}
 		for (int i = 0; i < a; i++) {
 			for (int j = 0; j < a; j++) {
-				System.out.print(map[i][j]);
+				System.out.print(map[i][j]+" ");
 			}
 			System.out.println();
 		}
