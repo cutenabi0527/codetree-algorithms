@@ -7,13 +7,12 @@ public class Main {
 		
 		System.out.print(2+" ");
 		for (int i=3; i<=n; i++) {
+			int cnt=0;
 			for (int j=2; j<i; j++) {
-				if (i%j==0) continue;
-				else {
-					System.out.print(i+" ");
-					break;
-				}
+				if (i%j==0) cnt++;
+				
 			}
+			if (cnt==0) System.out.print(i+" ");
 		}
 		
 
