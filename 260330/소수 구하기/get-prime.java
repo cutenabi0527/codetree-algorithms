@@ -8,7 +8,7 @@ public class Main {
 		System.out.print(2+" ");
 		for (int i=3; i<=n; i++) {
 			for (int j=2; j<i; j++) {
-				if (i%2==0) continue;
+				if (i%j==0) continue;
 				else {
 					System.out.print(i+" ");
 					break;
