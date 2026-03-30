@@ -5,9 +5,10 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		int st = sc.nextInt();
 		int ed = sc.nextInt();
-		int sum=0;
+		
 		int cnt=0;
 		for (int j=st; j<=ed; j++) {
+			int sum=0;
 			for (int i=1; i<j; i++) {
 				if (j%i==0) {
 					sum +=i;
