@@ -25,7 +25,7 @@ public class Main {
 		}
 		
 	
-		System.out.printf("%d %d", sum, cnt);
+		System.out.printf("%d %d", cnt,sum );
 
 	}
 }
