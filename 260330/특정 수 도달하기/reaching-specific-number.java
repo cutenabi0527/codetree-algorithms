@@ -8,18 +8,19 @@ public class Main {
 		
 		int sum=0;
 		float avg=0;
+		int idx=0;
 		for (int i=0; i<10; i++) {
 			int num = sc.nextInt();
-			if (num>=250) {
-				for (int j=0; j<i; j++) {
-					sum+=arr[j];
-				}
-				avg =  (float)sum/i;
-				break;
-			}
+			if (num>=250) break;
 			arr[i]= num;
+			idx=i;
 			
 		}
+		for (int j=0; j<=idx; j++) {
+			sum+=arr[j];
+		}
+		avg =  (float)sum/(idx+1);
+	
 		System.out.printf("%d %.1f", sum, avg);
 
 	}
