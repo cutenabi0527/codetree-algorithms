@@ -13,7 +13,7 @@ public class Main {
 			}
 		}
 		for (int a : arr) {
-			if (a!=0) System.out.println(a);
+			if (a!=0) System.out.print(a+" ");
 		}
 		
 	}
