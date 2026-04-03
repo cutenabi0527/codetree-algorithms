@@ -7,8 +7,9 @@ public class Main {
 		int b = sc.nextInt();
 		int [] arr = new int [10];
 		while (a>1) {
-			a = a/b;
+			
 			arr[a%b]++;
+			a = a/b;
 		}
 		int sum =0;
 		for (int i : arr) {
