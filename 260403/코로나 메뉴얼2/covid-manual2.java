@@ -23,6 +23,6 @@ public class Main {
 		for (int i : cnt) {
 			System.out.print(i+" ");
 		}
-		if (arr[0]>=2) System.out.print("E"); 
+		if (cnt[0]>=2) System.out.print("E"); 
 	}
 }
