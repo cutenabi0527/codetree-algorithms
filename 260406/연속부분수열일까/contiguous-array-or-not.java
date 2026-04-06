@@ -24,7 +24,7 @@ public class Main {
 			arr2[i] = Integer.parseInt(st.nextToken());
 		}
 		String ans = "Yes";
-		int idx1 = -1;
+		int idx1=-1;
 		int idx2=0;
 		for (int i = 0; i < N1; i++) {
 			if (arr1[i]==arr2[0]) {
@@ -32,7 +32,8 @@ public class Main {
 				break;
 			}
 		}
-		while (idx2<N2) {
+		if (idx1==-1) ans = "No";
+		while (idx2<N2 && idx1>=0) {
 			if (arr1[idx1]==arr2[idx2]) {
 				idx1++;
 				idx2++;
