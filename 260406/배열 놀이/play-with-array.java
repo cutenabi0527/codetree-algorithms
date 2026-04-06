@@ -28,7 +28,7 @@ public class Main {
             } else if (queryType == 2) {
             	int idx = 0;
                 int b = Integer.parseInt(st.nextToken());
-                for (int j =1; j<Q; j++ ) {
+                for (int j =1; j<=N; j++ ) {
                 	if (arr[j]==b) {
                 		idx = j;
                 		break;
