@@ -25,6 +25,7 @@ public class Main {
             if (queryType == 1) {
                 int a = Integer.parseInt(st.nextToken());
                 System.out.println(arr[a]);
+                break;
             } else if (queryType == 2) {
                 int b = Integer.parseInt(st.nextToken());
                 for (int j =1; j<arr.length; j++ ) {
@@ -40,6 +41,7 @@ public class Main {
                 	System.out.print(arr[j]+" ");
                 }
                 System.out.println();
+                break;
             }
             
             
