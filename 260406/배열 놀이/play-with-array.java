@@ -25,15 +25,13 @@ public class Main {
             if (queryType == 1) {
                 int a = Integer.parseInt(st.nextToken());
                 System.out.println(arr[a]);
-                break;
             } else if (queryType == 2) {
+            	int idx = 0;
                 int b = Integer.parseInt(st.nextToken());
-                for (int j =1; j<arr.length; j++ ) {
-                	if (arr[j]==b) {
-                		System.out.println(j);
-                		break;
-                	}
+                for (int j =1; j<Q; j++ ) {
+                	if (arr[j]==b) idx = j;
                 }
+                System.out.println(idx);
             } else if (queryType == 3) {
                 int s = Integer.parseInt(st.nextToken());
                 int e = Integer.parseInt(st.nextToken());
@@ -41,7 +39,6 @@ public class Main {
                 	System.out.print(arr[j]+" ");
                 }
                 System.out.println();
-                break;
             }
             
             
