@@ -29,7 +29,10 @@ public class Main {
             	int idx = 0;
                 int b = Integer.parseInt(st.nextToken());
                 for (int j =1; j<Q; j++ ) {
-                	if (arr[j]==b) idx = j;
+                	if (arr[j]==b) {
+                		idx = j;
+                		break;
+                	}
                 }
                 System.out.println(idx);
             } else if (queryType == 3) {
