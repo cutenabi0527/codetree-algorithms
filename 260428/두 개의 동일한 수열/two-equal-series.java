@@ -26,16 +26,15 @@ public class Main {
 		Arrays.sort(arr1);
 		Arrays.sort(arr2);
 		
-		boolean flag = false;
-		int cnt=0;
+		boolean flag = true;
 		for (int i=0; i<n; i++) {
 			int a = arr1[i];
 			int b = arr2[i];
-			if (a==b) {
-				cnt++;
+			if (a!=b) {
+				flag = false;
+				break;
 			}
 		}
-		if (cnt==n) flag = true;
 		
 		System.out.println(flag? "Yes" : "No");
 
