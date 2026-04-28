@@ -25,7 +25,7 @@ public class Main {
 			}
 		}
 		Collections.sort(dic);
-		System.out.println(dic.get(k+1));
+		System.out.println(dic.get(k-1));
 		
 		
 		
