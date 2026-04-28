@@ -14,8 +14,16 @@ public class Main {
 		char arr1[] = br.readLine().toCharArray();
 		char arr2[] = br.readLine().toCharArray();
 		
+		if (arr1.length !=arr2.length) {
+			System.out.println("No");
+			return;
+		}
+		
+		
 		Arrays.sort(arr1);
 		Arrays.sort(arr2);
+
+		
 		
 		boolean flag = true;
 		
