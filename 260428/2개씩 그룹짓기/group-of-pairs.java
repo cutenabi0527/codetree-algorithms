@@ -24,7 +24,7 @@ public class Main {
 		Arrays.sort(arr);
 		
 		int ans = 0;
-		for (int i=0; i<n/2; i++) {
+		for (int i=0; i<n; i++) {
 			ans = Math.max(ans, arr[i]+arr[2*n-1-i]);
 		}
 		System.out.println(ans);
