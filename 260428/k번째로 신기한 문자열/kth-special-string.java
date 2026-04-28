@@ -20,7 +20,7 @@ public class Main {
 		List<String> dic = new ArrayList<>();
 		for (int i=0; i<n; i++) {
 			String tmp = br.readLine();
-			if (tmp.substring(0, t.length()).equals(t)) {
+			if (tmp.startsWith(t)) {
 				dic.add(tmp);
 			}
 		}
