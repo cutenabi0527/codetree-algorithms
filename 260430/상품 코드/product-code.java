@@ -10,7 +10,7 @@ public class Main {
 		
 		public Product() {
 			this.pn = "codetree";
-			this.pc = 10;
+			this.pc = 50;
 		}
 		
 		public Product(String pn, int pc) {
@@ -25,11 +25,11 @@ public class Main {
 		
 		Product pd = new Product();
 		
-		System.out.println("product "+pd.pn+" is "+pd.pc);
+		System.out.println("product "+pd.pc+" is "+pd.pn);
 		
 		Product pd2 = new Product(st.nextToken(), Integer.parseInt(st.nextToken()));
 		
-		System.out.println("product "+pd2.pn+" is "+pd2.pc);
+		System.out.println("product "+pd2.pc+" is "+pd2.pn);
 	}
 
 }
